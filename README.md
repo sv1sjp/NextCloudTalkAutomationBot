@@ -127,7 +127,7 @@ Contributions are welcome! Feel free to fork the repository and submit a pull re
 
 ---
 
-🚀 **NextCloudATalkAutomationBot** – Created by Dimitris Vagiakakos @sv1sjp - TuxHouse  
+🚀 **NextCloudATalkAutomationBot** –  Created by Dimitris Vagiakakos [@sv1sjp](https://sv1sjp.github.io/whoami) - TuxHouse  
 Version 1.03
 
 
