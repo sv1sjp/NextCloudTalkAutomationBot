@@ -17,9 +17,20 @@ Welcome to **NextCloudTalkBot**, a powerful and flexible Python bot that allows 
 
 1. **Server Monitoring**: Integrate this bot with your server monitoring stack to receive alerts or routine system stats directly in a Nextcloud Talk channel.
 2. **Team Collaboration**: Automate sending updates or reminders to your team’s chat groups on Nextcloud.
-3. **Scheduled Tasks**: Set up a cron job to run routine commands (like checking storage or Docker status) and send the results at regular intervals.
+3. **Scheduled Tasks**: Set up a cron job to run routine commands (like checking storage or Docker status) and send the results on NextCloud Talk at regular intervals.
 4. **DevOps Integration**: Use the bot to monitor your **Docker** containers and receive real-time alerts on login attempts or potential issues with your server’s security.
 5. **Custom Notifications**: Build custom scripts that trigger notifications for key system events—like running out of storage, server uptime, or CPU overload—and send them automatically to your Nextcloud Talk channel.
+
+---
+## 🔥 **Lite Edition vs Full Edition** 🔥
+
+| Feature                     | Lite Edition 🎯                 | Full Edition 🏆                |
+|-----------------------------|---------------------------------|-------------------------------|
+| **Automated Messaging**      | ✅                             | ✅                             |
+| **System Monitoring**        | ❌                             | ✅ (CPU, Docker, Storage)      |
+| **Docker Log Monitoring**    | ❌                             | ✅                             |
+| **Custom Command Execution** | ❌                             | ✅ (Run Bash Commands)         |
+| **Ease of Setup**            | 🌟 Just Run the Script         | 🛠️  Set manually the configs   |
 
 ---
 
@@ -50,7 +61,7 @@ Replace the placeholder values with your actual **Nextcloud** server URL, bot cr
 You can interact with the bot via various command-line options:
 
 ```bash
-python3 nextcloudbot.py [options]
+python3 nextcloudtalkbot.py [options]
 ```
 
 ### 💡 Available Options & Scripts
@@ -60,14 +71,14 @@ The bot supports a wide range of actions, each triggered via specific flags. Her
   
   Example:
   ```bash
-  python3 nextcloudbot.py --send "Hello from the bot!"
+  python3 nextcloudtalkbot.py --send "Hello from the bot!"
   ```
 
 - **Execute a Command**: Run a Bash command and send its output via Nextcloud Talk.
   
   Example:
   ```bash
-  python3 nextcloudbot.py --command "ls -la"
+  python3 nextcloudtalkbot.py --command "ls -la"
   ```
 
 - **Predefined Scripts**: Run one or more of the built-in scripts for various system tasks.
@@ -82,21 +93,21 @@ The bot supports a wide range of actions, each triggered via specific flags. Her
 
   Example (run multiple scripts):
   ```bash
-  python3 nextcloudbot.py --script storage status cpu
+  python3 nextcloudtalkbot.py --script storage status cpu
   ```
 
-- **Specify Chat ID**: Send your message or script results to a specific Nextcloud Talk chat ID.
+- **Specify Chat ID**: Send your message or script results to a custom Nextcloud Talk chat ID:
   
   Example:
   ```bash
-  python3 nextcloudbot.py --chat "chat_id" --script nextcloud_login
+  python3 nextcloudtalkbot.py --chat "chat_id" --send "Hey"
   ```
 
 - **Help**: Display help message with all available commands and options.
   
   Example:
   ```bash
-  python3 nextcloudbot.py --help
+  python3 nextcloudtalkbot.py --help
   ```
 
 
@@ -106,13 +117,10 @@ The bot supports a wide range of actions, each triggered via specific flags. Her
 
 ## 🔧 Technical Details
 ### Logging
-All bot activity is logged with a timestamp and command details to the `nextcloudtalkbot.log` file. This helps track how the bot is being used and troubleshoot any issues.
+All bot activity is logged with a timestamp and command details to the `nextcloudtalkbot.log` file in order to track how the bot is being used and find potential issues.
 
 ### Security Considerations
 The bot uses **environment variables** to store sensitive information like your **Nextcloud** credentials. Ensure that you handle these credentials securely and avoid hardcoding them in your scripts.
-
-Additionally, the bot sends requests to **Nextcloud Talk** using **HTTPS**, ensuring secure transmission of data.
-
 ---
 
 ## 🤝 Contributing
