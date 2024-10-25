@@ -1,4 +1,4 @@
-# NextCloudTalkAutomationBot
+# NextCloud Talk Automation Bot
 
 ![Execution Screenshot](assets/nextcloudtalk_bot.png)
 
