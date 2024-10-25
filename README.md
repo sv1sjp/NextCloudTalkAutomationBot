@@ -1,7 +1,11 @@
 # NextCloudTalkAutomationBot
+
+![Execution Screenshot](assets/nextcloudtalk_bot.png)
+
 A powerful and flexible bot for automating tasks and sending messages via Nextcloud Talk 🚀
 
-
+[![License](https://img.shields.io/badge/license-AGPL-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
+[![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
 Welcome to **NextCloudTalkBot**, a powerful and flexible Python bot that allows you to automate tasks, monitor your system, and send messages via **Nextcloud Talk**.
 
@@ -21,6 +25,7 @@ Welcome to **NextCloudTalkBot**, a powerful and flexible Python bot that allows 
 4. **DevOps Integration**: Use the bot to monitor your **Docker** containers and receive real-time alerts on login attempts or potential issues with your server’s security.
 5. **Custom Notifications**: Build custom scripts that trigger notifications for key system events—like running out of storage, server uptime, or CPU overload—and send them automatically to your Nextcloud Talk channel.
 
+![Execution Screenshot](assets/logo.png)
 ---
 ## 🔥 **Lite Edition vs Full Edition** 🔥
 
@@ -120,7 +125,9 @@ The bot supports a wide range of actions, each triggered via specific flags. Her
 All bot activity is logged with a timestamp and command details to the `nextcloudtalkbot.log` file in order to track how the bot is being used and find potential issues.
 
 ### Security Considerations
+
 The bot uses **environment variables** to store sensitive information like your **Nextcloud** credentials. Ensure that you handle these credentials securely and avoid hardcoding them in your scripts.
+
 ---
 
 ## 🤝 Contributing
