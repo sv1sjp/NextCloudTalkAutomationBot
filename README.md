@@ -7,19 +7,19 @@ A powerful and flexible bot for automating tasks and sending messages via Nextcl
 [![License](https://img.shields.io/badge/license-AGPL-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
 [![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
-Welcome to **NextCloudTalkBot**, a powerful and flexible Python bot that allows you to automate tasks, monitor your system, and send messages via **Nextcloud Talk**.
+Welcome to **NextCloudTalkBot**, a powerful and flexible Python bot that allows you to monitor your system, and send messages via **Nextcloud Talk**.
 
 
 ### ✨ Key Features
 - **Automate Messaging**: Send messages to predefined or custom recipients on **Nextcloud Talk** directly from your terminal or via Cronjobs.
 - **Monitor Server's Health**: Keep track of key metrics like CPU usage, storage space and system uptime with prebuilt scripts.
-- **Docker Log Monitoring**: Get real-time data on **Nextcloud** and **Wireguard** login attempts from container logs.
-- **Custom Command Execution**: Run any Bash command and send its output via Nextcloud Talk—perfect for managing remote servers or triggering tasks!
+- **Docker Log Monitoring**: Get real-time data on **Nextcloud** and **Wireguard** login attempts from container logs, or even monitor Docker container's state. 
+- **Custom Command Execution**: Run any Bash command or custom script and send its output via Nextcloud Talk—perfect for managing remote servers or triggering tasks! It's like using NextCloud Talk chat as your screen for the outputs of the commands.
 - **Usage Logging**: Automatically logs every command used, making it easier to keep track of bot actions.
 
 ## 🎯 Smart Use Cases & Ideas
 
-1. **Server Monitoring**: Integrate this bot with your server monitoring stack to receive alerts or routine system stats directly in a Nextcloud Talk channel.
+1. **Server Monitoring**: Integrate this bot with your server monitoring stack to receive alerts or routine system stats directly in a Nextcloud Talk chat.
 2. **Team Collaboration**: Automate sending updates or reminders to your team’s chat groups on Nextcloud.
 3. **Scheduled Tasks**: Set up a cron job to run routine commands (like checking storage or Docker status) and send the results on NextCloud Talk at regular intervals.
 4. **DevOps Integration**: Use the bot to monitor your **Docker** containers and receive real-time alerts on login attempts or potential issues with your server’s security.
@@ -142,7 +142,7 @@ Contributions are welcome! Feel free to fork the repository and submit a pull re
 
 ---
 
-🚀 **NextCloudATalkAutomationBot** –  Created by Dimitris Vagiakakos [@sv1sjp](https://sv1sjp.github.io/whoami) - TuxHouse  
+🚀 **NextCloudATalkAutomationBot** –  Created by Dimitris Vagiakakos [@sv1sjp](https://sv1sjp.github.io/whoami) - TuxHouse  - [Find the Greek🇬🇷 version here:](https://linux-user.gr/t/nextcloud-talk-automation-bot-ena-eyelikto-bot-gia-apostolh-eidopoihsewn-systhmatos-se-mhnymata-mesw-toy-nextcloud-talk/5573) 
 Version 1.03
 
 
